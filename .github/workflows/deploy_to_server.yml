@@ -22,7 +22,7 @@ jobs:
       run: go mod tidy
     
     - name: Build binary
-      run: make build_for_alpine
+      run: CGO_ENABLED=0 GOOS=linux go build -v -a -installsuffix cgo .
 
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v3
