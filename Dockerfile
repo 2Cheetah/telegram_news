@@ -1,7 +1,7 @@
 FROM alpine:3
 
-WORKDIR /root/
+WORKDIR /
 
-COPY telegram_news .
+COPY ./telegram_news .
 
 CMD ["./telegram_news"]
