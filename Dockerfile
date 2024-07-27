@@ -4,4 +4,4 @@ WORKDIR /root/
 
 COPY telegram_news .
 
-CMD ["./telegram_news"]
+CMD ["/root/telegram_news"]
