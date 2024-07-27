@@ -33,11 +33,9 @@ jobs:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-    - name: Debug
-      run: ls -lah .
-
     - name: Build and push Docker image
       uses: docker/build-push-action@v6
       with:
+        context: .
         push: true
         tags: 2Cheetah/telegram_news:latest
