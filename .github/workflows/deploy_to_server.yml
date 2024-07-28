@@ -49,5 +49,5 @@ jobs:
           docker pull 2cheetah/telegram_news:latest
           docker stop telegram_news || true
           docker rm telegram_news || true
-          docker run -d --name telegram_news -e API_TOKEN="${{ secrets.API_TOKEN }}"" 2cheetah/telegram_news:latest
+          docker run -d --name telegram_news -e API_TOKEN="${{ secrets.API_TOKEN }}" 2cheetah/telegram_news:latest
         EOF
