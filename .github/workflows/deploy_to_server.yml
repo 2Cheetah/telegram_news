@@ -38,4 +38,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: 2Cheetah/telegram_news:latest
+        tags: 2cheetah/telegram_news:latest
